@@ -23,6 +23,15 @@ width:300px;
 background:black;
 `;
 
+const Message=styled.div`
+color:palevioletred;
+width:100px;
+background:white;
+height:100px
+align-items:center;
+`;
+
+
 
 
 const Display=styled.div`
@@ -62,7 +71,9 @@ export default class Main extends Component{
         <Display>
         <Header>React Clicker</Header>
         <Dis>
+        <Message>
         {this.state.count}
+        </Message>
         </Dis>
         <Button onClick={this.toIncrement}>+</Button>
         <Button onClick={this.toDecrement}>-</Button>
